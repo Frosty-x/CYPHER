@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("backgroundai.jpg") no-repeat center center/cover;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  /* Animated Heading */
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(90deg, #97bdd4, #515253, #514e4e, #97bdd4);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: wave 4s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0% { background-position: -100% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: -100% 0%; }
+  }
+  
+  /* Styled Box */
+  .box {
+    padding: 25px;
+    background: rgba(20, 20, 20, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Outline Animation */
+  @keyframes animateOutline {
+    0%, 100% { outline-width: 2px; outline-offset: 0; outline-color: rgba(0, 130, 206, 0); }
+    50% { outline-width: 8px; outline-offset: 5px; outline-color: rgba(225, 235, 240, 0.75); }
+  }
+  .box {
+    outline: 2px solid transparent;
+    animation: animateOutline 2s infinite;
+  }
+  
+  /* Smooth Fade-in */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 14px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6da2d9, #3b82f6);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
+  }
+  
